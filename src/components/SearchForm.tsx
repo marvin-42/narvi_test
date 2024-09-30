@@ -51,8 +51,9 @@ export default function SearchForm({
           control={control}
           render={({ field }) => (
             <InputBase
-              sx={{ ml: 1, flex: 1 }}
+              sx={{ ml: 1, flex: 1, width: "100%" }}
               placeholder="Search Github user"
+              fullWidth
               startAdornment={
                 <InputAdornment position="start">
                   <SearchIcon />
