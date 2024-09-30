@@ -40,7 +40,8 @@ export default function SearchForm({
     const subscription = watch(debouncedSubmit);
 
     return () => subscription.unsubscribe();
-  }, [handleSubmit, onSubmit, watch]);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [watch]);
 
   return (
     <>
